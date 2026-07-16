@@ -2983,6 +2983,9 @@ section.quote .quote_img_bg .para_img {
   gap: 10px;
   text-transform: uppercase;
 }
+.footer_logo_text .word:last-child {
+    color: var(--theme);
+}
 .footer .footer_logo_text svg {
   fill: var(--cmh-primary-color);
   height: clamp(3rem, 6vw, 10rem);
@@ -2999,7 +3002,7 @@ section.quote .quote_img_bg .para_img {
 }
 .footer .footer_contact_link {
   align-items: center;
-  background-color: var(--cmh-border-color);
+  background-color: var(--theme);
   border-radius: 100%;
   display: flex;
   font-size: clamp(1rem, 1.2vw, 30px);
