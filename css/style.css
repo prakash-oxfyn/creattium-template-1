@@ -43,6 +43,12 @@
   --cmh-overlay-color: hsla(0, 0%, 100%, 0.4);
   --plyr-color-main: var(--cmh-primary-color);
 }
+.theme-text {
+  color: var(--theme) !important;
+}
+.theme-bg {
+  background: var(--theme) !important;
+}
 .cmh_lightmode .abt_img_detail h4,
 .cmh_lightmode .abt_img_detail p,
 .cmh_lightmode .abt_img_ornament,
@@ -468,7 +474,7 @@ a {
   display: inline-block;
 }
 .hero_title.cmh_lines_animate .word:last-child {
-  color: var(--cmh-tertiary-color);
+  color: var(--theme);
 }
 .hero_subtitle {
   display: inline-block;
@@ -1654,7 +1660,7 @@ section.quote .quote_img_bg .para_img {
 }
 .cmh_link_button .cmh_btn_icon .ph {
   align-items: center;
-  background-color: var(--cmh-neutral-color);
+  background-color: var(--theme);
   display: inline-flex;
   height: 1.5rem;
   justify-content: center;
@@ -1667,7 +1673,7 @@ section.quote .quote_img_bg .para_img {
   top: -1.5rem;
 }
 .cmh_link_button:after {
-  background-color: var(--cmh-secondary-color);
+  background-color: var(--theme);
   bottom: 0;
   clip-path: inset(0 100% 0 0);
   content: "";
@@ -2277,14 +2283,14 @@ section.quote .quote_img_bg .para_img {
 .hero_personal .hero_personal_outer {
   padding: calc(5% - 30px) 0;
 }
-.hero_personal .hero_personal_outer .cmh_link_button {
+/* .hero_personal .hero_personal_outer .cmh_link_button {
   left: 50%;
   letter-spacing: 0.05rem;
   padding: 7px 15px;
   position: absolute;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-}
+} */
 .cmh_cursor {
   align-items: center;
   background: var(--cmh-neutral-color);
