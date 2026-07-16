@@ -57,6 +57,10 @@
             </div>
             <div class="cmh_menu_image d-none d-lg-flex position-absolute end-0 top-0 h-100 col-3 z-2"><video
                     class="menu_img" src="video/menu.mp4" muted loop playsinline></video></div>
+            <div class="abt_bottom_line_text position-absolute bottom-0 start-0 m-4 z-2">
+                <div class="abt_line"></div>
+                <p>Creattium Studio</p>
+            </div>
             <div class="noise-overlay"></div>
             <div class="quote_line_vert quote_quarter_left"></div>
             <div class="quote_line_vert quote_quarter_right"></div>
@@ -334,6 +338,32 @@
     </footer>
     <script src="js/vendor.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.querySelector('.cmh_menu_button');
+            const menuOverlay = document.querySelector('.cmh_menu');
+
+            function forceCloseMenu() {
+                if (!menuButton || !menuOverlay) return;
+                menuButton.classList.remove('is_open');
+                menuOverlay.style.display = 'none';
+                menuOverlay.style.clipPath = '';
+            }
+
+            document.querySelectorAll('.cmh_navigation > li > a[href^="#"]').forEach((link) => {
+                link.addEventListener('click', () => {
+                    if (menuButton && menuButton.classList.contains('is_open')) {
+                        menuButton.click();
+                        // fallback: if the theme's own close animation doesn't
+                        // finish (e.g. a JS error elsewhere), force it closed
+                        setTimeout(() => {
+                            if (menuButton.classList.contains('is_open')) forceCloseMenu();
+                        }, 700);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 <!-- Mirrored from template.ridianur.com/cimahi/index-personal.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jul 2026 13:05:33 GMT -->
 
