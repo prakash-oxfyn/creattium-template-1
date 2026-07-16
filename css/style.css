@@ -21,6 +21,7 @@
   --cmh-border-color: hsla(0, 0%, 100%, 0.05);
   --cmh-overlay-color: rgba(0, 0, 0, 0.5);
   --plyr-color-main: var(--cmh-dark-color);
+  --theme: #ff1e00;
 }
 .cmh_lightmode {
   --cmh-primary-color: #120d16;
@@ -287,7 +288,7 @@ a {
   width: 0;
 }
 .cmh-word-sub {
-  color: var(--cmh-border-color);
+  color: var(--theme);
   font-weight: 300;
   white-space: pre;
 }
