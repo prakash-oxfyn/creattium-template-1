@@ -2984,7 +2984,7 @@ section.quote .quote_img_bg .para_img {
   text-transform: uppercase;
 }
 .footer_logo_text .word:last-child {
-    color: var(--theme);
+  color: var(--theme);
 }
 .footer .footer_logo_text svg {
   fill: var(--cmh-primary-color);
@@ -3328,13 +3328,19 @@ section.quote .quote_img_bg .para_img {
 .footer_form_field textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--cmh-border-color);
+  border-bottom: 1px solid var(--theme);
   color: var(--cmh-primary-color);
   font-family: var(--cmh-font-secondary);
   font-size: 1rem;
   padding: 10px 2px;
   transition: border-color 0.3s;
   width: 100%;
+}
+.footer_form_field input:focus,
+.footer_form_field textarea:focus,
+.footer_form_field input:valid,
+.footer_form_field textarea:valid {
+  border-bottom: 1px solid var(--cmh-border-color);
 }
 .footer_form_field textarea {
   min-height: 90px;
