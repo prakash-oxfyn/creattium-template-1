@@ -27898,11 +27898,9 @@ function CmhMenu() {
   const e = document.querySelector(".cmh_menu"),
     t = document.querySelector(".cmh_menu_button"),
     i = e.querySelector(".cmh_menu_left"),
-    s = e.querySelector(".cmh_menu_image"),
     n = i.querySelectorAll(".cmh_navigation > li > a"),
     r = e.querySelector(".abt_bottom_line_text"),
-    o = e.querySelectorAll("a"),
-    a = s.querySelector(".menu_img");
+    o = e.querySelectorAll("a");
   Splitting({ target: o, by: "chars" });
   let l = !1;
   const c = { ease: cmhEaseFast },
@@ -27918,15 +27916,6 @@ function CmhMenu() {
         { duration: 0.6, delay: stagger(0.04, { start: 0.15 }), ...c },
       ],
       [
-        s,
-        {
-          "clip-path": ["inset(0% 0% 0% 100%)", "inset(0% 0% 0% 0%)"],
-          skewY: [5, 0],
-          scale: [1.2, 1],
-        },
-        { duration: 0.3, delay: 0.1, ...c },
-      ],
-      [
         r,
         {
           opacity: [0, 1],
@@ -27934,14 +27923,10 @@ function CmhMenu() {
         },
         { duration: 0.2, ...c },
       ],
-    ],
-    u =
-      window.matchMedia("(max-width: 768px)").matches ||
-      "ontouchstart" in window ||
-      navigator.maxTouchPoints > 0;
+    ];
   t.onclick = () => {
     (l
-      ? (u && (a.pause(), (a.currentTime = 0)),
+      ? (
         t.classList.remove("is_open"),
         animate(
           e,
@@ -27973,7 +27958,7 @@ function CmhMenu() {
         (e.style.display = "block"),
         animate(d),
         lenis.stop(),
-        u || a.play()),
+        u),
       (l = !l));
   };
   const h = document.querySelector(".cmh_navigation");
