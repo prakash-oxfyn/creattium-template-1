@@ -27913,7 +27913,7 @@ function CmhMenu() {
       [
         n,
         { opacity: [0, 1], y: [80, 0], skewY: [5, 0] },
-        { duration: 0.6, delay: stagger(0.04, { start: 0.15 }), ...c },
+        { duration: 0.1, delay: stagger(0.04, { start: 0.025 }), ...c },
       ],
       [
         r,
