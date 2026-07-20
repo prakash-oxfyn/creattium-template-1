@@ -27957,8 +27957,7 @@ function CmhMenu() {
         document.querySelector(".top_header").classList.remove("header-hidden"),
         (e.style.display = "block"),
         animate(d),
-        lenis.stop(),
-        u),
+        lenis.stop()),
       (l = !l));
   };
   const h = document.querySelector(".cmh_navigation");

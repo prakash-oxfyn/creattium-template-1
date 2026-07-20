@@ -399,25 +399,11 @@
         });
 
         document.addEventListener('DOMContentLoaded', () => {
-            const menuButton = document.querySelector('.cmh_menu_button');
-            const menuOverlay = document.querySelector('.cmh_menu');
-
-            function forceCloseMenu() {
-                if (!menuButton || !menuOverlay) return;
-                menuButton.classList.remove('is_open');
-                menuOverlay.style.display = 'none';
-                menuOverlay.style.clipPath = '';
-            }
-
             document.querySelectorAll('.cmh_navigation > li > a[href^="#"]').forEach((link) => {
                 link.addEventListener('click', () => {
+                    const menuButton = document.querySelector('.cmh_menu_button');
                     if (menuButton && menuButton.classList.contains('is_open')) {
                         menuButton.click();
-                        // fallback: if the theme's own close animation doesn't
-                        // finish (e.g. a JS error elsewhere), force it closed
-                        setTimeout(() => {
-                            if (menuButton.classList.contains('is_open')) forceCloseMenu();
-                        }, 700);
                     }
                 });
             });
