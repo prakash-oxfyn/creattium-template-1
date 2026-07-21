@@ -1158,7 +1158,7 @@ section.quote .quote_img_bg .para_img {
 .cmh_marquee_text {
   color: var(--cmh-primary-color);
   font-family: var(--cmh-font-primary);
-  font-size: clamp(1.5rem, 6vw, 6rem);
+  font-size:  clamp(1rem, 6vw, 2.535rem);
   font-weight: 600;
   margin-right: 50px;
 }
