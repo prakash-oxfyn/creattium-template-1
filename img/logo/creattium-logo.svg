@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="8 13 38 19"
+     width="54"
+     height="27">
+
+  <!-- Red half circle -->
+  <path d="M 8 32 A 19 19 0 0 1 46 32 Z" fill="#FF1800"/>
+
+  <!-- Left eye -->
+  <ellipse cx="16.5" cy="27" rx="4.6" ry="5" fill="#fff"/>
+  <circle cx="16.5" cy="28.2" r="1.5" fill="#000"/>
+
+  <!-- Right eye -->
+  <ellipse cx="37.5" cy="27" rx="4.6" ry="5" fill="#fff"/>
+  <circle cx="37.5" cy="28.2" r="1.5" fill="#000"/>
+
+</svg>
