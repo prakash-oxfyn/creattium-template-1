@@ -2944,7 +2944,7 @@ section.quote .quote_img_bg .para_img {
 .footer {
   background-color: var(--cmh-footer-color);
   bottom: 0;
-  font-size: 1.1rem;
+  font-size: clamp(1.4rem, 0.6rem + 0.8vw, 1.45rem);
   left: 0;
   overflow: hidden;
   position: relative;
@@ -3039,13 +3039,20 @@ section.quote .quote_img_bg .para_img {
   gap: 0;
 }
 .footer_social_list li a {
+  align-items: center;
   display: inline-flex;
   font-size: 0.8rem;
   font-weight: 400;
+  gap: 10px;
   letter-spacing: 0.2rem;
   overflow: hidden;
   position: relative;
   text-transform: uppercase;
+}
+.footer_social_list li a .footer_social_icon {
+  color: var(--cmh-primary-color);
+  flex-shrink: 0;
+  font-size: 1.1rem;
 }
 .footer_social_list li a .char {
   color: transparent;
@@ -3272,6 +3279,9 @@ section.quote .quote_img_bg .para_img {
 /* What We Do: static, typography-only list */
 .sv_stick_list li {
   border-bottom: 1px solid var(--cmh-border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-bottom: 30px;
 }
 .sv_stick_list li:last-child {
@@ -3291,7 +3301,7 @@ section.quote .quote_img_bg .para_img {
 }
 .sv_stick_list li p {
   color: var(--cmh-secondary-color);
-  font-size: clamp(1rem, 0.4rem + 0.7vw, 1.15rem);
+  font-size: clamp(1.4rem, 0.6rem + 0.8vw, 1.45rem);
   margin-bottom: 0;
 }
 /* -----------------------------------------
