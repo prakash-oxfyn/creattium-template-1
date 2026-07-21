@@ -3130,6 +3130,9 @@ section.quote .quote_img_bg .para_img {
 .footer_social_list li a:hover .char:after {
   transform: translateY(0);
 }
+.footer_copyright {
+  font-size: 1.1rem;
+}
 @media (max-width: 991.98px) {
   .text_hero_absolute {
     left: 0;
@@ -3417,6 +3420,7 @@ section.quote .quote_img_bg .para_img {
   outline: none;
 }
 .footer_form_submit {
+  color:var(--cmh-primary-color);
   align-self: flex-start;
   border: none;
   cursor: pointer;
