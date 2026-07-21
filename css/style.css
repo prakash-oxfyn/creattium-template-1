@@ -295,7 +295,7 @@ a {
 }
 .cmh-word-sub {
   color: var(--theme);
-  font-weight: 300;
+  font-weight: 700;
   white-space: pre;
 }
 .top_header {
