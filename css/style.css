@@ -1166,7 +1166,6 @@ section.quote .quote_img_bg .para_img {
   font-size: clamp(1rem, 6vw, 2.535rem);
 }
 .cmh_sparkle {
-  color: transparent;
   display: inline-block;
   font-style: normal;
   margin-left: 50px;
