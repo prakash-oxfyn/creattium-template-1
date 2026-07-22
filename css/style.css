@@ -1716,6 +1716,9 @@ section.quote .quote_img_bg .para_img {
   transition: transform 0.3s;
   width: 1.5rem;
 }
+.cmh_lightmode .cmh_link_button .cmh_btn_icon .ph {
+  color: var(--cmh-neutral-color);
+}
 .cmh_link_button .cmh_btn_icon .ph:last-child {
   left: -1.5rem;
   position: absolute;
@@ -3419,7 +3422,7 @@ section.quote .quote_img_bg .para_img {
   outline: none;
 }
 .footer_form_submit {
-  color:var(--cmh-primary-color);
+  color: var(--cmh-primary-color);
   align-self: flex-start;
   border: none;
   cursor: pointer;
