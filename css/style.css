@@ -365,7 +365,7 @@ a {
 }
 .logo {
   align-items: center;
-  color: var(--cmh-primary-color);
+  color: var(--cmh-primary-color) !important;
   display: inline-flex;
   font-family: var(--cmh-font-secondary);
   font-size: 1.4rem;
