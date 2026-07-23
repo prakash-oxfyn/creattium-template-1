@@ -2405,7 +2405,7 @@ section.quote .quote_img_bg .para_img {
   width: 80px;
 }
 .cmh_cursor.cursor_logo {
-  background-color: #fff;
+  background-color: var(--cmh-primary-color);
   border-radius: 50px;
   height: 100px;
   width: 100px;
