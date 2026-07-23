@@ -198,6 +198,38 @@ a {
   inset: 0;
   position: absolute;
 }
+/* Cinematic wide banners */
+.cmh_wide_banner {
+  aspect-ratio: 21 / 9;
+  min-height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+.cmh_wide_banner .para_bg_wrapper {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.cmh_wide_banner .para_bg {
+  height: 100%;
+  object-fit: cover;
+  scale: 1.3;
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .cmh_wide_banner {
+    aspect-ratio: 16 / 9;
+  }
+}
+@media (max-width: 767.98px) {
+  .cmh_wide_banner {
+    aspect-ratio: 4 / 3;
+    min-height: 260px;
+  }
+}
 .para_img_wrapper {
   border-radius: 0.3em;
   height: 500px;
