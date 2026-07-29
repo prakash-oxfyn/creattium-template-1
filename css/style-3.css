@@ -1628,10 +1628,10 @@ section.quote .quote_img_bg .para_img {
   transform: scale(1);
   transition-delay: 0;
 }
-.works_list li .work_list_link:hover .works_list_title {
+/* .works_list li .work_list_link:hover .works_list_title {
   color: var(--cmh-primary-color);
   transform: scale(1.2);
-}
+} */
 .hero_single_work {
   overflow: hidden;
 }
