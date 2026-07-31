@@ -3436,21 +3436,15 @@ section.quote .quote_img_bg .para_img {
 }
 .footer_form_field input,
 .footer_form_field textarea {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid var(--theme);
-  color: var(--cmh-primary-color);
+  background-color: var(--cmh-primary-color);
+  border: 1px solid transparent;
+  border-radius: 0.3em;
+  color: var(--cmh-neutral-color);
   font-family: var(--cmh-font-secondary);
   font-size: 1rem;
-  padding: 10px 2px;
-  transition: border-color 0.3s;
+  padding: 12px 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
   width: 100%;
-}
-.footer_form_field input:focus,
-.footer_form_field textarea:focus,
-.footer_form_field input:valid,
-.footer_form_field textarea:valid {
-  border-bottom: 1px solid var(--cmh-border-color);
 }
 .footer_form_field textarea {
   min-height: 90px;
@@ -3458,8 +3452,8 @@ section.quote .quote_img_bg .para_img {
 }
 .footer_form_field input::placeholder,
 .footer_form_field textarea::placeholder {
-  color: var(--cmh-primary-color);
-  opacity: 0.35;
+  color: var(--cmh-neutral-color);
+  opacity: 0.45;
 }
 .footer_form_field input:focus,
 .footer_form_field textarea:focus {
