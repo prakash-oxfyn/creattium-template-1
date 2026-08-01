@@ -27740,32 +27740,27 @@ function top_preloader() {
   (animate(
     ".letter",
     { opacity: [0, 1], y: [20, 0] },
-    { duration: 0.6, delay: stagger(0.1) },
+    { duration: 0.6, delay: stagger(0.04) },
   ),
-    animate(
-      ".insert",
-      { width: ["0px", "auto"], opacity: [0, 1] },
-      { duration: 0.8, ease: cmhEaseReveal, delay: 1 },
-    ),
     animate(
       ".cmh-word-sub",
       { width: "auto", opacity: [0, 1] },
-      { duration: 0.6, ease: cmhEaseReveal, delay: 1.8 },
+      { duration: 0.6, ease: cmhEaseReveal, delay: 1.4 },
     ),
     animate(
       ".cmh-text-wrapper",
       { opacity: 0, y: -20 },
-      { duration: 0.4, delay: 3.2 },
+      { duration: 0.4, delay: 2.8 },
     ));
   const e = animate(
       ".cmh-panel-left",
       { x: "-100%" },
-      { duration: 0.6, ease: cmhEaseSlice, delay: 3.6 },
+      { duration: 0.6, ease: cmhEaseSlice, delay: 3.2 },
     ),
     t = animate(
       ".cmh-panel-right",
       { x: "100%" },
-      { duration: 0.6, ease: cmhEaseSlice, delay: 3.6 },
+      { duration: 0.6, ease: cmhEaseSlice, delay: 3.2 },
     );
   return Promise.all([e.finished, t.finished]).then(() => {
     const e = document.querySelector(".cmh-preloader");
