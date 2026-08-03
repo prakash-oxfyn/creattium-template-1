@@ -3091,17 +3091,28 @@ section.quote .quote_img_bg .para_img {
   align-items: center;
   color: var(--cmh-primary-color);
   display: flex;
-  font-size: clamp(4rem, 9vw, 12rem);
+  flex-wrap: wrap;
+  font-size: clamp(2.25rem, 11vw, 12rem);
   font-weight: 700;
   gap: 10px;
+  row-gap: 0;
   text-transform: uppercase;
 }
 .footer_logo_text .word:last-child {
   color: var(--theme);
 }
+.top_footer_logo {
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
 .footer .footer_logo_text svg {
   fill: var(--cmh-primary-color);
   height: clamp(3rem, 6vw, 10rem);
+}
+.footer .footer_logo_icon {
+  flex-shrink: 0;
+  height: clamp(3rem, 6vw, 10rem);
+  width: auto;
 }
 .footer .footer_copy {
   padding: 60px 0;
