@@ -3456,6 +3456,12 @@ section.quote .quote_img_bg .para_img {
 /* -----------------------------------------
    Footer contact form
 ----------------------------------------- */
+.contact_anchor {
+  position: relative;
+  top: 200px;
+  height: 0;
+  pointer-events: none;
+}
 .footer_form {
   display: flex;
   flex-direction: column;
