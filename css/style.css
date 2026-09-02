@@ -2384,6 +2384,28 @@ section.quote .quote_img_bg .para_img {
   scale: 1.3;
   width: 100%;
 }
+.hero_corner_logo {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.hero_corner_logo img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+@media (max-width: 767.98px) {
+    .hero_corner_logo {
+      display: none;
+        right: 6%;
+    }
+
+    .hero_corner_logo img {
+        width: 70px;
+    }
+}
 .hero_personal .abt_bottom_line_text {
   padding: calc(5% - 30px);
   position: absolute;
