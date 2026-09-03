@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   class="cmh-loader-icon"
    version="1.1"
    id="svg1"
    width="298"
@@ -40,6 +41,23 @@
        margin="65.57933 150.66667 82.666664 85.333336"
        bleed="0" />
   </sodipodi:namedview>
+    <style>
+    .cmh-loader-eye {
+      animation: cmh-blink 4s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    @keyframes cmh-blink {
+      0%,
+      10%,
+      100% {
+         transform: scaleY(1);
+      }
+      5% {
+        transform: scaleY(0.08);
+      }
+    }
+  </style>
 <g
      id="layer-MC0"
      inkscape:groupmode="layer"
@@ -69,6 +87,7 @@
        d="M 0,0 V -50.122 C 19.281,-38.32 34.698,-20.837 43.938,0 Z"
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
        transform="matrix(1.3333333,0,0,-1.3333333,312,292.05067)" />
+   <g class="cmh-loader-eye">
     <path
        id="path7"
        d="m 0,0 c 0,-15.096 -12.237,-27.333 -27.333,-27.333 -15.096,0 -27.333,12.237 -27.333,27.333 0,15.096 12.237,27.333 27.333,27.333 C -12.237,27.333 0,15.096 0,0"
@@ -79,6 +98,8 @@
        d="m 0,0 c 0,-4.05 -3.283,-7.333 -7.333,-7.333 -4.05,0 -7.333,3.283 -7.333,7.333 0,4.05 3.283,7.333 7.333,7.333 C -3.283,7.333 0,4.05 0,0"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
        transform="matrix(1.3333333,0,0,-1.3333333,159.11067,226.66667)" />
+   </g>
+   <g class="cmh-loader-eye">
     <path
        id="path9"
        d="m 0,0 c 0,-15.096 12.237,-27.333 27.333,-27.333 15.096,0 27.333,12.237 27.333,27.333 0,15.096 -12.237,27.333 -27.333,27.333 C 12.237,27.333 0,15.096 0,0"
@@ -89,6 +110,7 @@
        d="m 0,0 c 0,-4.05 3.283,-7.333 7.333,-7.333 4.05,0 7.333,3.283 7.333,7.333 0,4.05 -3.283,7.333 -7.333,7.333 C 3.283,7.333 0,4.05 0,0"
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
        transform="matrix(1.3333333,0,0,-1.3333333,308.88933,226.66667)" />
+              </g>
   </g>
   <g
      id="layer-MC1"
