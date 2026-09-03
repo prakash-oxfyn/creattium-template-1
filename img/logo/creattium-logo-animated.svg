@@ -43,7 +43,7 @@
   </sodipodi:namedview>
     <style>
     .cmh-loader-eye {
-      animation: cmh-blink 4s ease-in-out infinite;
+      animation: cmh-blink 4s ease-in-out 0.35s infinite;
       transform-box: fill-box;
       transform-origin: center;
     }
