@@ -3116,7 +3116,8 @@ section.quote .quote_img_bg .para_img {
   display: flex;
   flex-wrap: wrap;
   font-size: clamp(2.25rem, 11vw, 12rem);
-  font-weight: 700;
+  font-family: Neo Gray;
+  font-weight: 500;
   gap: 10px;
   row-gap: 0;
   line-height: 1;

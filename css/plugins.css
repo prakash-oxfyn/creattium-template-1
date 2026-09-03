@@ -28457,6 +28457,13 @@ button.swiper-pagination-bullet {
     url(../fonts/Phosphor.ttf) format("truetype"),
     url(../fonts/Phosphor.svg#Phosphor) format("svg");
 }
+@font-face {
+  font-family: Neo Gray;
+  src: url("../fonts/NeogreyMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 .ph {
   font-family: Phosphor !important;
   speak: never;
