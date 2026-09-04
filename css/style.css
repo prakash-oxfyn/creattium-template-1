@@ -402,9 +402,9 @@ a {
   font-size: 1.4rem;
   font-weight: 800;
   gap: 5px;
-  letter-spacing: -0.05rem;
+  letter-spacing: 0.2rem;
   margin: 0;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .logo svg {
   fill: var(--cmh-primary-color);
