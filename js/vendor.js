@@ -27737,36 +27737,83 @@ function addWrapperLine(e) {
   });
 }
 function top_preloader() {
-  (animate(
-    ".letter",
-    { opacity: [0, 1], y: [20, 0] },
-    { duration: 0.6, delay: stagger(0.04) },
-  ),
-    animate(
-      ".cmh-word-sub",
-      { width: "auto", opacity: [0, 1] },
-      { duration: 0.6, ease: cmhEaseReveal, delay: 1.4 },
-    ),
-    animate(
-      ".cmh-text-wrapper",
-      { opacity: 0, y: -20 },
-      { duration: 0.4, delay: 2.8 },
-    ));
-  const e = animate(
-      ".cmh-panel-left",
-      { x: "-100%" },
-      { duration: 0.6, ease: cmhEaseSlice, delay: 3.2 },
-    ),
-    t = animate(
-      ".cmh-panel-right",
-      { x: "100%" },
-      { duration: 0.6, ease: cmhEaseSlice, delay: 3.2 },
-    );
-  return Promise.all([e.finished, t.finished]).then(() => {
-    const e = document.querySelector(".cmh-preloader");
-    e && (e.style.display = "none");
+  const logo = animate(
+    ".cmh-static-text-wrapper",
+    {
+      opacity: [1, 0],
+      scale: [1, 0.96],
+      y: [0, -10],
+    },
+    {
+      duration: 0.35,
+      ease: "easeOut",
+      delay: 0.65,
+    }
+  );
+
+  const leftPanel = animate(
+    ".cmh-panel-left",
+    { x: "-100%" },
+    {
+      duration: 0.7,
+      ease: cmhEaseSlice,
+      delay: 0.9,
+    }
+  );
+
+  const rightPanel = animate(
+    ".cmh-panel-right",
+    { x: "100%" },
+    {
+      duration: 0.7,
+      ease: cmhEaseSlice,
+      delay: 0.9,
+    }
+  );
+
+  return Promise.all([
+    logo.finished,
+    leftPanel.finished,
+    rightPanel.finished,
+  ]).then(() => {
+    const preloader = document.querySelector(".cmh-preloader");
+
+    if (preloader) {
+      preloader.style.display = "none";
+    }
   });
 }
+// function top_preloader() {
+//   (animate(
+//     ".letter",
+//     { opacity: [0, 1], y: [20, 0] },
+//     { duration: 0.6, delay: stagger(0.04) },
+//   ),
+//     animate(
+//       ".cmh-word-sub",
+//       { width: "auto", opacity: [0, 1] },
+//       { duration: 0.6, ease: cmhEaseReveal, delay: 1.4 },
+//     ),
+//     animate(
+//       ".cmh-text-wrapper",
+//       { opacity: 0, y: -20 },
+//       { duration: 0.4, delay: 2.8 },
+//     ));
+//   const e = animate(
+//       ".cmh-panel-left",
+//       { x: "-100%" },
+//       { duration: 0.6, ease: cmhEaseSlice, delay: 3.2 },
+//     ),
+//     t = animate(
+//       ".cmh-panel-right",
+//       { x: "100%" },
+//       { duration: 0.6, ease: cmhEaseSlice, delay: 3.2 },
+//     );
+//   return Promise.all([e.finished, t.finished]).then(() => {
+//     const e = document.querySelector(".cmh-preloader");
+//     e && (e.style.display = "none");
+//   });
+// }
 function loader() {
   const e = document.querySelector(".cmh-preloader");
   e && (e.style.display = "none");

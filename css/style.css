@@ -348,6 +348,12 @@ a {
 .cmh-panel-right {
   right: 0;
 }
+.cmh-static-text-wrapper{
+  align-items: center;
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
 .cmh-text-wrapper {
   align-items: baseline;
   color: #fff;
@@ -399,11 +405,13 @@ a {
   color: var(--cmh-primary-color) !important;
   display: inline-flex;
   font-family: Neo Gray;
-  font-size: 1.4rem;
-  font-weight: 800;
-  gap: 5px;
-  letter-spacing: 0.2rem;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  text-transform: none;
   margin: 0;
+  gap: 5px;
   /* text-transform: uppercase; */
 }
 .logo svg {
@@ -3549,4 +3557,28 @@ section.quote .quote_img_bg .para_img {
     flex-direction: column;
     gap: 20px;
   }
+}
+/*  BRAND STYLES */
+.cmh-brand-lockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(24px, 3.646vw, 70px);
+}
+.cmh-brand-icon {
+  width: clamp(76px, 11.67vw, 224px);
+  height: clamp(76px, 11.615vw, 223px);
+}
+.cmh-brand-wordmark {
+  color: var(--theme);
+  font-family: Neo Gray;
+  font-size: clamp(26px, 3.906vw, 75px);
+  font-weight: 500;
+  letter-spacing: clamp(1.4px, 0.208vw, 4px);
+  line-height: 1;
+  margin: 0;
+  text-transform: none;
+  width: clamp(148px, 22.604vw, 434px);
+  height: auto;
+  text-align: center;
 }
